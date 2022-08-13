@@ -1,0 +1,121 @@
+@import url(https://fonts.google.com/specimen/Outfit);
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+:root{
+    --primary-color:hsl(215, 51%, 70%);
+    --secondary-color:hsl(178, 100%, 50%);
+
+}
+body{
+    flex-direction: column;
+    min-height:100vh;
+    background-color:hsl(217, 54%, 11%);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Outfit';
+}
+main{
+    width:90%;
+    display:flex;
+    justify-content:center;
+}
+/*NFT Component*/
+.nft-component{
+    max-width:320px;
+    display:grid;
+    grid-template-rows:1fr 0.6fr;
+    padding:1.5rem;
+    background-color:hsl(216, 50%, 16%);
+    border-radius:1rem;
+}
+/*IMAGE*/
+.image{
+    border-radius:0.5rem;
+}
+.image:hover{
+    background-color:hsl(178, 100%, 50%);
+}
+.image:hover img{
+    opacity:0.5;
+}
+.image img{
+    max-width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:0.5rem;
+}
+/*NFT DESCRIPTION*/
+.nft-description{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    margin-top:1rem;
+}
+.nft-description h1{
+    color:white;
+    font-weight:400;
+    font-size:1.5rem;
+}
+.nft-description h1:hover{
+    color:hsl(178, 100%, 50%);
+    cursor:pointer;
+}
+.nft-description p{
+    color:var(--primary-color);
+    font-size:1rem;
+    line-height:1.5;
+}
+.nft-description > section{
+    display:flex;
+    justify-content:space-between;
+    
+}
+.eth-price{
+    display:flex;
+    align-items:center;
+    
+}
+.eth-price p{
+    margin-left:10px;
+    color:hsl(178, 100%, 50%);
+    font-weight:400;
+}
+.time-remaining{
+    display:flex;
+    align-items:center;
+}
+.time-remaining p{
+    margin-left:10px;
+}
+.nft-description hr{
+    border:1px solid white;
+}
+/*NFT ATTRIBUTION*/
+.nft-attribution{
+    display:flex;
+    align-items:center;
+}
+.nft-attribution img{
+    max-width:30px;
+    margin-top:10px;
+    border:1px solid black;
+    border-radius:50%;
+}
+.nft-attribution p{
+    margin-left:1rem;
+    font-size:0.9rem;
+    color:var(--primary-color);
+}
+.nft-attribution a{
+    color:white;
+    text-decoration:none;
+}
+.nft-attribution a:hover{
+    color:hsl(215, 32%, 27%);
+}
+
